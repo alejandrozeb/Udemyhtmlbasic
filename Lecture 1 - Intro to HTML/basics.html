@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My First Web Page </title>
+    <!- da infromacion en la bisqueda ->
+    <meta name="description" content="Page Description Here"/>
+   <!- tipo de texto en la pagina -> 
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+    <!- permite la adecuacion del tamaño para pc y mobile ->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <style type="text/css">
+        Body {
+            color: red;
+        }
+
+    </style>
+    <!- ayuda a crear efectos interactivos con el usuario ->
+    <script>
+        //permite cambiar minusculas por mayusculas
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+<!- area visible del web site ->
+<body>
+<p> This is a Sample HTML Document.</p>
+This Javascript function will capitalize my name:
+<p> Enter your name: 
+<!- llama a la funcion creada ->
+<input type="text" id="fname" onchange="myFunction()"></p>
+<p>This is line 1.<br> This is line 2. <!- espacios extra ->    &nbsp;&nbsp;&nbsp;&nbsp; This is line 3.</p>
+
+<h1>Header 1 </h1>
+<h2>Header 2</h2>
+<h3>Header 3</h3>
+<h4> <font face="arial" size="22" color="blue"> header 4</font></h4>
+<p>
+    <strong>Bold text </strong> <br>
+    <em>Italic text</em> <br>
+    <u>Underline Text</u> <br>
+    <strike>Strike text</strike>
+   <u><strong><em>bold, Italic, and Underline text.</em></strong></u>
+</p>
+<h3>Firts list my favorite sports</h3>
+<ul>
+    <li>basketball</li>
+    <li>Soccer</li>
+    <li>hockey</li>
+    <li>Football</li>
+</ul>
+
+<h3>My favorite vacations</h3>
+<ol>
+    <li>Miami, FL</li>
+    <li>New York, NY</li>
+    <li>Lost Vegas, NV</li>
+    <li>Bouston, TX</li>
+</ol>
+<h1>Vacation Pictures</h1>
+<p>
+   <a href="http://www.miami.com"> <img src="FL.jpg" width="333" height="250"> </a>
+   <a href="http://www.lasvegas.com"> <img src="LV.jpg" width="375" height="250"></a>
+   <a href="http://www.newyork.com"><img src="Ny.jpg" width="376" height="250"></a>
+   <a href="http://www.texas.com"> <img src="https://es.wikipedia.org/wiki/Odín#/media/Archivo:Ardre_Odin_Sleipnir.jpg" width="377" height="250"></a>
+</p>
+<p>
+    <!- se abre en la misma ventana sin el tag target ->
+    <a href="http://www.miami.com" target="_blank"> Florida.com <br></a>
+    <a href="http://www.lasvegas.com">Lasvegas.com <br></a>
+    <a href="http://www.newyork.com">NewYork.com <br></a>
+    <a href="http://www.texas.com">Texas.com <br></a>
+</p>
+</body>
+
+</html>
